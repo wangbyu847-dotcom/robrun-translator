@@ -1,0 +1,9 @@
+# ROB RUN 实时屏幕翻译工具 - 依赖清单
+# 全部是免费公开库，不需要 API key，不需要付费。
+# 安装命令：pip install -r requirements.txt
+
+mss                      # 截屏
+rapidocr-onnxruntime     # OCR 认字（离线，不用联网）
+deep-translator          # 翻译（MyMemory 免费接口主用，Google 备用，都不要 key）
+pillow                   # 图片处理
+pynput                   # 全局快捷键 F9

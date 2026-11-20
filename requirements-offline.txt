@@ -1,0 +1,12 @@
+# ROB RUN 实时屏幕翻译工具 - 离线引擎依赖清单（轻量版，必装）
+# 只给离线模式用。这两个库就是 Argos Translate 模型实际用的翻译引擎，
+# 直接加载同一个 Argos 英中模型文件（.argosmodel），不需要 torch，
+# 所以装得快、体积小、弱网也能装上。
+# 安装命令：pip install -r requirements-offline.txt
+# 装好库之后，第一次用离线模式时还要联网下载一次英中模型（约 70MB），
+# 之后断网也能用。模型存在系统目录里，不用每次都下。
+# 在线模式不需要这个文件。
+# 想用 Argos 官方库的完整版，另装 requirements-offline-full.txt（可选）。
+
+ctranslate2           # Argos 模型实际用的翻译引擎（OpenNMT 模型，CPU 跑）
+sentencepiece         # 分词（Argos 模型自带的 sentencepiece.model 要用它读）

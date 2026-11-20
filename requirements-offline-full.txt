@@ -1,0 +1,11 @@
+# ROB RUN 实时屏幕翻译工具 - 离线引擎完整版依赖（可选）
+# Argos Translate 官方库。装了它之后离线模式会优先走官方库的加载方式，
+# 翻译效果和轻量版（requirements-offline.txt）完全一样——同一个模型文件、
+# 同一个权重，只是多一层官方封装。
+#
+# 注意：这个库会额外拉入 stanza -> torch，约 500MB+，
+# 网络不好时可能下载失败。失败也没关系：
+# 轻量版（requirements-offline.txt）照样能翻，不用非装这个。
+# 安装命令：pip install -r requirements-offline-full.txt
+
+argostranslate        # 离线翻译官方库（OpenNMT + CTranslate2，本地跑，不联网）
